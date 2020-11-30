@@ -1,0 +1,171 @@
+publishdir = "public"
+static = "/static"
+builddrafts = false
+# Replace this with your website URL
+baseurl = "http://www.ocri-genomics.org/gdrilab/"
+canonifyurls = true
+theme = "hugo-academic-group"
+title = "Genomics & Disease Resistance Improvement Lab at OCRI of CAAS"
+math = true
+copyright = "&copy; Genomics & Disease Resistance Improvement Lab, 2020 "
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+
+
+[params]
+  description = "Website of Genomics & Disease Resistance Improvement Lab"
+  author = "Xiaobo Cui"
+  email = "liusy@oilcrops.cn"
+  address = '<a href="https://cn.bing.com/maps/embed?h=400&w=500&cp=30.581653976721398~114.34479259558125&lvl=17&typ=d&sty=r&src=SHELL&FORM=MBEDV8">Fifth floor of research building, OCRI, No.2 Xudong 2nd Road, Wuchang, Wuhan, China</a>'
+
+  slogan = "Genomics & Disease Resistance Improvement Lab"
+  slogan_text = ""
+
+  [params.logo]
+    image = "img/GDRI-logo-1.png"
+    link = "/"
+
+  [[params.slogan_columns]]
+    title = ""
+    text =  ""
+    link = "/about"
+    link_text = ""
+    weight = 1
+
+    [[params.sponsors]]
+    name = "OCRI"
+    link = "http://ocri.caas.cn/en/"
+    image = "img/sponsors/ocri_new_logo.png"
+
+    [[params.sponsors]]
+    name = "CAAS"
+    link = "http://www.caas.cn/en/"
+    image = "img/sponsors/CAAS_logo.png"
+
+    [[params.sponsors]]
+    name = "NSFC"
+    link = "http://www.nsfc.gov.cn/english/site_1/index.html"
+    image = "img/sponsors/logo_nsfc.png"
+  
+#  [[params.slogan_columns]]
+#    title = "Mission"
+#    text = "Per peterem ex, Eurystheus videt maeonis, Paeonis uritur. Dextera [legem](http://nubibus.net/qualisardeat), contigerat optabile undis bene: abis sperato. Instrumenta arma, subiectas generis non ipsa patres quia magna Messeneque lacrimaeque torva. Aequo crescunt inrequieta feras, diu illa est occupat aequoribus hunc Elpenora tollens vult robore. Finiat priora vulnere nec Nelei fit quae totidemque intibaque iter longo."
+#    link = "/mission"
+#    link_text = "Read more"
+#    weight = 2
+
+#  [[params.slogan_columns]]
+#    title = "Approach"
+#    text = "Lorem markdownum in texit! Quoniam ferar tabellis modo! Nam et spatiosumque puellae modo temperiemque mare canentis ministris **populisque** actus flammifera [dicta](http://www.geminoalpino.com/nec-pegason), non neque nutrit [recingunt Phrygiae](http://vitta-telamone.org/cyllenenquearcus.php). Pignoribus Phaestia Chaonis simulacraque viae et genus miratur moenibus tinnitibus ex simul."
+#    link = "/approach"
+#    link_text = "Read more"
+#    weight = 3
+
+  # Selected Publications section.
+#  [params.publications_selected]
+#    detailed_list = true
+#    title = "Selected Publications"
+#    subtitle = ""
+
+  # Publications section.
+  # Section will only be displayed if there are publications in `content/publication/`.
+  [params.publications]
+    count = 5
+    detailed_list = true
+    title = "Publications"
+    subtitle = ""
+    str_all = "More Publications"
+
+  # Posts section.
+  # Section will only be displayed if there are posts in `content/post/`.
+  [params.posts]
+    count = 2
+    title = "News"
+    subtitle = ""
+    str_all = "More News"
+    str_read_more = "Read more"
+
+  # Projects section.
+  # Section will only be displayed if there are projects in `content/project/`.
+  [params.projects]
+    title = "Projects"
+    subtitle = ""
+    count = 3
+    str_all = "More Projects"
+  
+  # Vacancies section
+  # Section will only be displayed if there are valid vacancies in `content/vacancy`
+#  [params.vacancies]
+#    title = "Vacancies"
+#    subtitle = ""
+#    count = 3
+#    str_all = "More Vacancies"
+
+  # Contact section.
+  [params.contact]
+    enable = true
+    title = "Contact"
+    subtitle = ""
+    autolink = false  # Automatically link email and phone?
+
+  # Navigation Links
+  #   The weight parameter defines the order that the links will appear in.
+
+  [[menu.main]]
+      name = "Home"
+      url = "/#top"
+      weight = 1
+
+  [[menu.main]]
+      name = "Research"
+#      url = "/research"
+      weight = 2
+      identifier = "research"
+
+  [[menu.main]]
+      name = "Projects"
+      url = "/#projects"
+      weight = 2
+      parent = "research"
+
+  [[menu.main]]
+      name = "Publications"
+      url = "/#publications"
+      weight = 2
+      parent = "research"
+
+  [[menu.main]]
+      name = "Resources"
+#      url = "/#publications"
+      weight = 3
+      identifier = "resources"
+
+  [[menu.main]]
+      name = "OCGDS"
+      url = "http://www.ocri-genomics.org/ocgds/"
+      weight = 3
+      parent = "resources"
+
+  [[menu.main]]
+      name = "BnaOmics"
+#      url = ""
+      weight = 3
+      parent = "resources"
+
+  [[menu.main]]
+      name = "Members"
+      url = "/#members"
+      weight = 5
+
+  [[menu.main]]
+      name = "News"
+      url = "/#posts"
+      weight = 6
+
+
+  [[menu.main]]
+      name = "Contact"
+      url = "/#contact"
+      weight = 7
